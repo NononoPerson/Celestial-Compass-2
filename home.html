@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Zodiac Reading</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: bold;
+      color: rgb(1, 1, 77);
+      background: url('https://wallpapers.com/images/hd/zodiac-signs-aesthetic-pattern-vff5t1f0n05lgxtk.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      height: 100vh;
+      overflow-x: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .traits-box {
+      background-color: rgba(255, 255, 255, 0.85);
+      border: 2px solid #000;
+      padding: 20px;
+      margin: 20px;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(106, 27, 154, 0.3);
+      word-wrap: break-word;
+    }
+
+    #colorCircle {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      border: 2px solid #444;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #000;
+      margin-top: 10px;
+      background-color: #6c63ff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      background-color: #574b90;
+      color: #fff;
+    }
+
+    .centered-nav {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class='traits-box'>
+    <h2 id='userName'></h2>
+    <h3 id='zodiacSign'></h3>
+    <p id='zodiacMeaning'></p>
+    <p id='advice'></p>
+    <p id='horoscope'></p>
+    <p id='lucky_number'></p>
+    <p id='lucky_metal'></p>
+    <p id='planetary_connection'></p>
+    <p id='zodiac_element'></p>
+    <p id='element_group'></p>
+    <div id="luckyColorWrapper">
+      <p id="lucky_color">Lucky_Color:</p>
+      <div id="colorCircle"></div>
+    </div>
+    <p id='lucky_day'></p>
+    <p id='inauspicious_time'></p>
+    <p id='auspicious_time'></p>
+  </div>
+
+  <a href='logout.html'>Logout</a>
+  <br>
+<a href="chatbot.html" id="chatbotBtn">Talk to ZodiacVerseGpt</a>
+  <script src='script.js'></script>
+</body>
+</html>
